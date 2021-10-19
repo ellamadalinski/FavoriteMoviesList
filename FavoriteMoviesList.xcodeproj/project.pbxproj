@@ -14,6 +14,8 @@
 		B6E8A706271EF19200405D5F /* FavoriteMoviesList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6E8A704271EF19200405D5F /* FavoriteMoviesList.xcdatamodeld */; };
 		B6E8A708271EF19300405D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E8A707271EF19300405D5F /* Assets.xcassets */; };
 		B6E8A70B271EF19300405D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E8A709271EF19300405D5F /* LaunchScreen.storyboard */; };
+		B6E8A713271EF52900405D5F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8A712271EF52900405D5F /* Movie.swift */; };
+		B6E8A715271EF5AF00405D5F /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8A714271EF5AF00405D5F /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B6E8A707271EF19300405D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E8A70A271EF19300405D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6E8A70C271EF19300405D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6E8A712271EF52900405D5F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		B6E8A714271EF5AF00405D5F /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 				B6E8A6FB271EF19200405D5F /* AppDelegate.swift */,
 				B6E8A6FD271EF19200405D5F /* SceneDelegate.swift */,
 				B6E8A6FF271EF19200405D5F /* ViewController.swift */,
+				B6E8A712271EF52900405D5F /* Movie.swift */,
 				B6E8A701271EF19200405D5F /* Main.storyboard */,
+				B6E8A714271EF5AF00405D5F /* SecondVC.swift */,
 				B6E8A707271EF19300405D5F /* Assets.xcassets */,
 				B6E8A709271EF19300405D5F /* LaunchScreen.storyboard */,
 				B6E8A70C271EF19300405D5F /* Info.plist */,
@@ -144,6 +150,8 @@
 				B6E8A6FC271EF19200405D5F /* AppDelegate.swift in Sources */,
 				B6E8A706271EF19200405D5F /* FavoriteMoviesList.xcdatamodeld in Sources */,
 				B6E8A6FE271EF19200405D5F /* SceneDelegate.swift in Sources */,
+				B6E8A715271EF5AF00405D5F /* SecondVC.swift in Sources */,
+				B6E8A713271EF52900405D5F /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
