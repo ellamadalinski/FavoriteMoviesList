@@ -9,9 +9,13 @@ import UIKit
 
 class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSource{
 
-    var favs : [String] = ["Interstellar", "Titanic", "Gifted", "Harry Potter", "Teen Beach Movie", "High School Musical", "How the Grinch Stole Christmas", "8", "9", "10", "11", "12"]
-    @IBOutlet weak var tableViewOutlet: UITableView!
+    var movie1 = Movie(n : "", y : 0, r : 0.0, i : "", d : "")
     
+    var favs : [Movie] = [movie1]
+    
+    // "Interstellar", "Titanic", "Gifted", "Harry Potter", "Teen Beach Movie", "High School Musical", "How the Grinch Stole Christmas", "8", "9", "10", "11", "12"
+    
+    @IBOutlet weak var tableViewOutlet: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +37,7 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "toSecondVC", sender: nil)
+        let nvc = favs[indexPath.row]
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
