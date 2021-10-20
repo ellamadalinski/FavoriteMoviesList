@@ -15,7 +15,8 @@ class SecondVC: UIViewController {
     @IBOutlet weak var imageOutlet: UIImageView!
     @IBOutlet weak var yearLabelOutlet: UILabel!
     @IBOutlet weak var ratingLabelOutlet: UILabel!
-    @IBOutlet weak var descriptionLabelOutlet: UILabel!
+    @IBOutlet weak var descriptionTextViewOutlet: UITextView!
+    
     
     
     
@@ -25,7 +26,7 @@ class SecondVC: UIViewController {
         nameLabelOutlet.text = incoming.name
         yearLabelOutlet.text = "Year Released: \(String(incoming.yearReleased))"
         ratingLabelOutlet.text = "Rating: \(String(incoming.rating))"
-        descriptionLabelOutlet.text = "Description: \(String(incoming.description))"
+        descriptionTextViewOutlet.text = "Description: \(incoming.description)"
         imageOutlet.image = UIImage(named: "\(incoming.image)")
         
     }
