@@ -13,7 +13,7 @@ public class Movie{
     var yearReleased : Int
     var rating : Double
     var image : String
-    var discription : String
+    var description : String
 
 
     init(n : String, y : Int, r : Double, i : String, d : String){
@@ -21,7 +21,7 @@ public class Movie{
         yearReleased = y
         rating = r
         image = i
-        discription = d
+        description = d
     }
     
 }

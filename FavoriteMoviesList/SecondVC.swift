@@ -8,11 +8,26 @@
 import UIKit
 
 class SecondVC: UIViewController {
-
+    
+    var incoming : Movie!
+    
+    @IBOutlet weak var nameLabelOutlet: UILabel!
+    @IBOutlet weak var imageOutlet: UIImageView!
+    @IBOutlet weak var yearLabelOutlet: UILabel!
+    @IBOutlet weak var ratingLabelOutlet: UILabel!
+    @IBOutlet weak var descriptionLabelOutlet: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        nameLabelOutlet.text = incoming.name
+        yearLabelOutlet.text = "Year Released: \(String(incoming.yearReleased))"
+        ratingLabelOutlet.text = "Rating: \(String(incoming.rating))"
+        descriptionLabelOutlet.text = "Description: \(String(incoming.description))"
+        imageOutlet.image = UIImage(named: "\(incoming.image)")
+        
     }
     
 
