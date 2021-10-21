@@ -81,11 +81,14 @@
                                 </textField>
                             </barButtonItem>
                         </leftBarButtonItems>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="wGC-ba-Mpu"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="wGC-ba-Mpu">
+                            <connections>
+                                <action selector="addMovieButtonAction:" destination="BYZ-38-t0r" id="zy6-Wl-jPL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="movieNameTextFieldOutlet" destination="Glt-KR-fHf" id="J0R-cS-8na"/>
-                        <outlet property="movieNameTextViewOutlet" destination="Glt-KR-fHf" id="pkR-a9-Hvs"/>
                         <outlet property="ratingtextFieldOutlet" destination="yyV-Jb-63h" id="umd-J5-0dV"/>
                         <outlet property="tableViewOutlet" destination="U1k-pm-bVc" id="DdB-aJ-Kr1"/>
                         <outlet property="yearReleasedTextFieldOutlet" destination="cpD-sk-aXw" id="R8E-ev-RyR"/>
@@ -130,7 +133,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Description:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LiF-mf-cwW">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LiF-mf-cwW">
                                 <rect key="frame" x="30" y="570" width="330" height="225"/>
                                 <color key="backgroundColor" white="0.79762057220000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -141,7 +144,9 @@
                         <viewLayoutGuide key="safeArea" id="Ws2-3L-r5I"/>
                         <color key="backgroundColor" white="0.79762057217684657" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Ws2-3L-r5I" firstAttribute="bottom" secondItem="LiF-mf-cwW" secondAttribute="bottom" constant="15" id="7WW-8y-R4o"/>
                             <constraint firstItem="Ws2-3L-r5I" firstAttribute="trailing" secondItem="LiF-mf-cwW" secondAttribute="trailing" constant="30" id="Ng3-kr-20I"/>
+                            <constraint firstItem="LiF-mf-cwW" firstAttribute="height" secondItem="9pT-dL-Xg8" secondAttribute="height" multiplier="0.266588" id="PJJ-nl-IwR"/>
                             <constraint firstItem="LiF-mf-cwW" firstAttribute="leading" secondItem="Ws2-3L-r5I" secondAttribute="leading" constant="30" id="ptM-lW-ihd"/>
                         </constraints>
                     </view>
